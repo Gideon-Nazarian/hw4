@@ -274,6 +274,7 @@ void BinarySearchTree<Key, Value>::printRoot (Node<Key, Value>* root) const
             std::cout << '(' << placeholdersIter->first << ", ";
 
             typename BinarySearchTree<Key, Value>::iterator elementIter = this->find(placeholdersIter->first);
+            //std::cout << placeholdersIter->first; 
             if(elementIter == this->end())
             {
                 std::cout << "<error: lookup failed>";
