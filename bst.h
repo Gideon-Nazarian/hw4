@@ -531,8 +531,6 @@ void BinarySearchTree<Key, Value>::insert(const std::pair<const Key, Value> &key
     // TODO(D?)
 
     if(empty()){
-       // std::cout << keyValuePair.first << std::endl;
-       // std::cout << keyValuePair.second << std::endl;
 
         root_ = new Node<Key, Value>( keyValuePair.first, keyValuePair.second, nullptr);
         return;
@@ -557,7 +555,7 @@ void BinarySearchTree<Key, Value>::insert(const std::pair<const Key, Value> &key
                 temp -> setValue(keyValuePair.second);
                 return;
             }
-        }
+        }///////////
            
             Node<Key, Value> *tempAdd = new Node<Key, Value>( keyValuePair.first, keyValuePair.second, nullptr);
             if(LorR){
